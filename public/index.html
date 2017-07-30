@@ -38,6 +38,19 @@
 	  <!-- And then your bundled js -->
 	  <script src="./src/App.js"></script>
     <div id="root"></div>
+    <script>
+      $(document).ready(function(){
+        $('.parallax').parallax();
+      });
+      $('.modal').modal();
+      $(document).ready(function() {
+        $('select').material_select();
+      })
+        $(document).ready(function(){
+        $('ul.tabs').tabs('select_tab', 'tab_id');
+      });
+     
+    </script>
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
