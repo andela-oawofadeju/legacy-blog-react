@@ -2,6 +2,7 @@ body {
   font-family: "Roboto", sans-serif;
   background-color:  #ffffff;
   font-size: 12px;
+  font-family: cursive;
 }
   h1,
   h2,
@@ -9,7 +10,9 @@ body {
   h4,
   h5 {
     font-family: "Roboto", sans-serif;
+    font-family: cursive;
     color: black;
+    margin-bottom: 30px;
   }
   p {
     font-weight: 500;
@@ -17,34 +20,26 @@ body {
     text-align: center;
   }
 
-element.style {
-    display: flex;
-    width: 100%;
-    height: 100%;
-    background-color: #efebe9;
-}
-
-.App---canvas---1lOS0 {
-    position: fixed;
-    height: 100%;
-    width: 100%;
-    top: 0;
-    left: 0;
-    z-index: 0;
-}
 
 nav {
   background-color:  #efebe9;
 }
-  .nav-wrapper {
-    width: 100%;
-    margin: 0px auto;
+
+.nav-wrapper {
+  width: 100%;
+  margin: 0px auto;
+}
+nav .brand-logo {
+  color: #000;
+  font-size: 2.1rem;
+  padding: -3px;
+  margin-left: 10px;
   }
 
 nav ul a {
     transition: background-color .3s;
     transition: all ease-in-out 0.4s;
-    font-size: 14px;
+    font-size: 16px;
     color: #000;
     display: block;
     padding: 0 15px;
@@ -66,12 +61,23 @@ background-color: #88034f;
 color: #000000;
 }
 
+
+input {
+  width: 40%;
+  height:80%;
+}
+
 .parallax-container{
  
   background: linear-gradient( rgba(0, 0, 0.2, 0.7), rgba(0, 0, 0.2, 0.7) );
   margin-bottom: -20px;
 }
 
+.form-text {
+  font-weight: bold;
+  font-size: 18px;
+  color: #000000;
+}
 
 .bold {
   font-weight: bold;
@@ -82,13 +88,23 @@ color: #000000;
 }
 .welcome{
     text-align: center;
-    margin-left:40%;
+    margin-left:42%;
     font-size: 20px;
     color: #000000;
 }
 
-.float-left {
-  float: left
+.socials {
+  text-align: center;
+  width: 100%;
+}
+
+@media only screen and (min-width: 993px){
+.row .col.l6 {
+    width: 100%;
+    margin-left: auto;
+    left: auto;
+    right: auto;
+}
 }
 
 .about-us {
@@ -200,4 +216,8 @@ footer {
 
 .blog-main .landing h1 {
     color: #fff
+}
+
+.social-icon {
+  margin-right:5px;
 }

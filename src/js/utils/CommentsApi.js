@@ -8,11 +8,11 @@ import axios from './index';
  * @returns {any}
  */
 
-export default class Blog {
+export default class Comment{
 
   static getAll(id) {
     return new Promise((resolve, reject) => {
-      axios.get(`/users/${id}/blogs`)
+      axios.get(`/users/${id}/comments`)
       .then(res => resolve(res.data))
       .catch(error => reject(error));
     });
@@ -20,7 +20,7 @@ export default class Blog {
 
   static get(id) {
     return new Promise((resolve, reject) => {
-      axios.get(`/blogs/${id}`)
+      axios.get(`/comments/${id}`)
       .then(res => resolve(res.data))
       .catch(error => reject(error));
     });
@@ -30,7 +30,7 @@ export default class Blog {
     return new Promise((resolve, reject) => {
       data.public = data.public || 0;
       data.public = data.editable || 0;
-      axios.post('/blog', data)
+      axios.post('/comments', data)
       .then(res => resolve(res.data))
       .catch(error => reject(error));
     });
@@ -38,7 +38,7 @@ export default class Blog {
 
   static delete(id) {
     return new Promise((resolve, reject) => {
-      axios.delete(`/blog/${id}`)
+      axios.delete(`/comments/${id}`)
       .then(res => resolve(res.data))
       .catch(error => reject(error));
     });
@@ -46,7 +46,7 @@ export default class Blog {
 
   static update(updateData) {
     return new Promise((resolve, reject) => {
-      axios.put(`/blog/${updateData.id}`, updateData.data)
+      axios.put(`/comments/${updateData.id}`, updateData.data)
       .then(res => resolve(res.data))
      .catch(error => reject(error));
     });
@@ -54,21 +54,21 @@ export default class Blog {
 
   static search(id, query) {
     return new Promise((resolve, reject) => {
-      axios.get(`/users/${id}/blog?q=${query}`)
+      axios.get(`/users/${id}/comments?q=${query}`)
       .then(res => resolve(res.data))
       .catch(error => reject(error));
     });
   }
   static getPrivate(id){
     return new Promise((resolve, reject) => {
-      axios.get('/blog/private/')
+      axios.get('/comments/private/')
       .then(res => resolve(res.data))
       .catch(error => reject(error));
     });
   }
   static getPublic(id){
     return new Promise((resolve, reject) => {
-      axios.get('/blog/public')
+      axios.get('/comments/public')
       .then(res => resolve(res.data))
       .catch(error => reject(error));
     });
