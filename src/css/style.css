@@ -1,0 +1,223 @@
+body {
+  font-family: "Roboto", sans-serif;
+  background-color:  #ffffff;
+  font-size: 12px;
+  font-family: cursive;
+}
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    font-family: "Roboto", sans-serif;
+    font-family: cursive;
+    color: black;
+    margin-bottom: 30px;
+  }
+  p {
+    font-weight: 500;
+    font-size: 16px;
+    text-align: center;
+  }
+
+
+nav {
+  background-color:  #efebe9;
+}
+
+.nav-wrapper {
+  width: 100%;
+  margin: 0px auto;
+}
+nav .brand-logo {
+  color: #000;
+  font-size: 2.1rem;
+  padding: -3px;
+  margin-left: 10px;
+  }
+
+nav ul a {
+    transition: background-color .3s;
+    transition: all ease-in-out 0.4s;
+    font-size: 16px;
+    color: #000;
+    display: block;
+    padding: 0 15px;
+    cursor: pointer;
+}
+
+.custom-navbar .nav li.active > a {
+    background-color: transparent;
+    color: #000;
+}
+
+.custom-navbar .nav li a:hover {
+    background: transparent;
+    color: #000;
+}
+
+.material-icons prefix{
+background-color: #88034f;
+color: #000000;
+}
+
+
+input {
+  width: 40%;
+  height:80%;
+}
+
+.parallax-container{
+ 
+  background: linear-gradient( rgba(0, 0, 0.2, 0.7), rgba(0, 0, 0.2, 0.7) );
+  margin-bottom: -20px;
+}
+
+.form-text {
+  font-weight: bold;
+  font-size: 18px;
+  color: #000000;
+}
+
+.bold {
+  font-weight: bold;
+  font-size: 60px;
+  text-align: center;
+  margin-left:33%;
+  color: #000000;
+}
+.welcome{
+    text-align: center;
+    margin-left:42%;
+    font-size: 20px;
+    color: #000000;
+}
+
+.socials {
+  text-align: center;
+  width: 100%;
+}
+
+@media only screen and (min-width: 993px){
+.row .col.l6 {
+    width: 100%;
+    margin-left: auto;
+    left: auto;
+    right: auto;
+}
+}
+
+.about-us {
+  margin-top: 50px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.auth-body {
+  text-align: center;
+  span {
+    font-weight: 200;
+    font-size: 47px;
+  }
+  .register,
+  .login {
+    width: 80%;
+    text-align: left;
+    button {
+      width: 100%
+    }
+  }
+  .login {
+    float: left;
+    margin-right: 20px;
+    border-color: #880e4f;
+  }
+  .register {
+    float: right;
+    margin-left: 20px;
+    border-color: #880e4f;
+  }
+  .form-right {
+    border-left: solid 1px #fce4ec;
+  }
+}
+
+.how {
+  font-weight: 200;
+  color: #ffffff;
+  h3 {
+    margin-top: 12%;
+    color:#fce4ec;
+    font-weight: 400;
+  }
+  li {
+    text-align: left;
+    font-weight: inherit;
+    font-size: 24px;
+    color: #000000;
+  }
+}
+
+.alert {
+  max-width: 500px;
+  display: inline-block;
+  text-align: center;
+  padding: 0px 10px;
+  color: #fff;
+  p {
+    margin-top: 0px;
+    padding: 5px;
+  }
+}
+
+
+table{
+color: #263238 !important;
+}
+
+.material-icons {
+  color: #fce4ec !important;
+}
+
+.icon-change {
+  color: #880e4f !important;
+}
+
+.border {
+  border-color: #880e4f;
+  color: #880e4f;
+}
+
+.search {
+  margin: 40px auto;
+  border-color: #880e4f;
+}
+
+footer {
+  padding: 5px;
+  margin-top: 0px;
+  border-top: 1px solid #efebe9;
+  background-color:#efebe9;
+  color: #000000;
+}
+
+.blog-main {
+    display: inline-block;
+    width: 100%;
+    position: absolute;
+    color:#fff;
+
+}
+
+.blog-main .landing {
+    position: relative;
+    top: 200px;
+}
+
+.blog-main .landing h1 {
+    color: #fff
+}
+
+.social-icon {
+  margin-right:5px;
+}
