@@ -1,6 +1,5 @@
 {
   "name": "my_blog",
-
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -9,6 +8,7 @@
     "react-dipper": "^0.1.3",
     "react-dom": "^15.6.1",
     "react-materialize": "^1.0.6",
+    "react-navbar": "^1.0.0",
     "react-particles": "0.0.3",
     "react-particles-js": "^1.5.0",
     "react-redux": "^5.0.5",
@@ -17,6 +17,7 @@
     "react-router-dom": "^4.1.2",
     "react-router-redux": "^5.0.0-alpha.6",
     "react-scripts": "1.0.10",
+    "react-tinymce": "^0.6.0",
     "redux": "^3.7.2",
     "redux-form": "^7.0.3",
     "redux-immutable-state-invariant": "^2.0.0",
@@ -31,5 +32,4 @@
   "devDependencies": {
     "react-social-icons": "^2.7.0"
   }
-
 }

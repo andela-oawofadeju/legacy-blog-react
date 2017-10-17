@@ -8,8 +8,13 @@ class Contact extends React.Component {
        <div>
        <h3><strong>Contact</strong>Me</h3>
         <Row>
-          <Input s={6} label="First Name" validate><Icon>account_circle</Icon></Input>
-          <Input s={6} label="Telephone" validate type='tel'><Icon>phone</Icon></Input>
+          <Input className="contact-input" s={6} label="Name" validate><Icon>account_circle</Icon></Input>
+          <Input className="contact-input" s={6} label="Telephone" validate type='tel'><Icon>phone</Icon></Input>
+          <Input className="contact-input" s={6} label="Email" validate type='tel'><Icon>phone</Icon></Input>
+          <Input className="contact-input" s={6} label="Message" validate type='tel' rows={10} cols="40"><Icon>phone</Icon></Input>
+          <div className="col m12 l12 s12 ">
+            <button className="btn btn-large waves-effect waves-light">Save</button>
+          </div>
         </Row>
       </div>
     );

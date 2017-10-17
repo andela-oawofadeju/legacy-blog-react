@@ -1,6 +1,4 @@
 import React from 'react';
-import Header from './Header';
-import Footer from './Footer';
 import Main from './Main';
 import Particles from 'react-dipper';
 
@@ -53,14 +51,14 @@ const defaultParticle = {
     },
     "line_linked": {
       "enable": true,
-      "distance": 150,
+      "distance": 100,
       "color": "#ffffff",
-      "opacity": 0.4,
-      "width": 1
+      "opacity": 2.5,
+      "width": 2
     },
     "move": {
       "enable": true,
-      "speed": 6,
+      "speed": 10,
       "direction": "none",
       "random": false,
       "straight": false,
@@ -98,7 +96,7 @@ const defaultParticle = {
         "size": 40,
         "duration": 2,
         "opacity": 8,
-        "speed": 3
+        "speed": 9
       },
       "repulse": {
         "distance": 200,
@@ -118,9 +116,9 @@ const defaultParticle = {
 class Home extends React.Component {
   render() {
     return (
-      <div> 
+      <div className="particles-div"> 
         <Main />
-        <Particles styleParams={{backgroundColor: "#efebe9"}} particleParams={defaultParticle} />
+        <Particles styleParams={{backgroundColor: "#D7CCC8"}} particleParams={defaultParticle} />
       </div>
     );
   }
